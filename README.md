@@ -1,6 +1,6 @@
 # Csvorders
 
-TODO: Write a gem description
+The rGenerator Commerce Platform can ingest order data from outside sources in CSV format. This library can be used to validate the CSV prior to ingestion so the order creation process goes smoothly.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+TODO: with an example app
 
 ## Contributing
 
