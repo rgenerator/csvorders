@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "csvorders"
   spec.version       = Csvorders::VERSION
   spec.authors       = ["Troy Denkinger"]
-  spec.email         = ["tdenkinger@gmail.com"]
-  spec.description   = %q{CSV-based order handling}
-  spec.summary       = %q{CSV-based order handling}
-  spec.homepage      = ""
+  spec.email         = ["troy@rgenerator.com"]
+  spec.description   = %q{Generator publishes a specification for formatting orders to be ingested into its commerce platform. This library will help anyone writing to that specification verify the validity of their data.}
+  spec.summary       = %q{Validity checker for CSV-based external orders data.}
+  spec.homepage      = "https://github.com/rgenerator/csvorders"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
