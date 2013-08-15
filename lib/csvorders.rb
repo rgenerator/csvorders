@@ -1,12 +1,12 @@
 require "csvorders/version"
-require 'validation/Header'
-require 'ValidationErrors'
-require 'validation/Addresses'
-require 'validation/Countries'
-require 'validation/Languages'
-require 'validation/Currencies'
-require 'validation/Products'
-require 'validation/Structure'
+require 'validation/header'
+require 'validationerrors'
+require 'validation/addresses'
+require 'validation/countries'
+require 'validation/languages'
+require 'validation/currencies'
+require 'validation/products'
+require 'validation/structure'
 
 module Csvorders
   class Validator
