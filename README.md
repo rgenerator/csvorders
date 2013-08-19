@@ -6,19 +6,19 @@ The rGenerator Commerce Platform can ingest order data from outside sources in C
 
 Add this line to your application's Gemfile:
 
-    gem 'csvorders'
+    gem 'csvorders', '~> 1.0', :git => "https://github.com/rgenerator/csvorders.git"
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Or install it yourself by cloning this repo the running:
 
-    $ gem install csvorders
+    rake install
 
 ## Usage
 
-TODO: with an example app
+TODO: show an example app
 
 ## Contributing
 
