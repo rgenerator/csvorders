@@ -21,7 +21,7 @@ module Csvorders
                    :not_required => ['billing_address_2', 'shipping_address_2'],
                    :product      => ['product_id', 'price_per', 'quantity', 'shipping_per', 'tax_per']}
       @validation_errors = []
-      @debug = :false
+      @debug = false
     end
 
     def set_counts(opts)
