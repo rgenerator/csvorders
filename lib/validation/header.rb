@@ -3,7 +3,8 @@ class Header
     headers = get_headers_as_array(row)
     valid_required = check_required_headers(product_count, columns, headers, :required)
     valid_product = check_product_headers(product_count, columns, headers, :product)
-    valid_required && valid_product
+    p valid_required unless valid_required.empty?
+    valid_required.empty? && valid_product
   end
 
   def self.check_product_headers(product_count, columns, headers, type)
@@ -20,9 +21,10 @@ class Header
   end
 
   def self.check_required_headers(product_count, columns, headers, type)
+    missing_headers = []
     columns[type].each do |column|
-      return false unless headers.include?(column)
+      missing_headers << column unless headers.include?(column)
     end
-    true
+    missing_headers
   end
 end

@@ -10,7 +10,7 @@ require 'validation/structure'
 
 module Csvorders
   class Validator
-    attr_accessor :column_count, :product_count, :product_indexes, :validation_errors
+    attr_accessor :column_count, :product_count, :product_indexes, :validation_errors, :debug
     attr_reader :columns
 
     def initialize
@@ -21,6 +21,7 @@ module Csvorders
                    :not_required => ['billing_address_2', 'shipping_address_2'],
                    :product      => ['product_id', 'price_per', 'quantity', 'shipping_per', 'tax_per']}
       @validation_errors = []
+      @debug = :false
     end
 
     def set_counts(opts)
@@ -33,6 +34,7 @@ module Csvorders
     end
 
     def validate(row)
+      p row if debug
       status = is_valid?(row)
       return true if status == true
       record_error(status, row)
